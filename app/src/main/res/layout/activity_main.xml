@@ -7,6 +7,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World!" />
+            <Button
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:text="Click me!"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50px"/>
+        </LinearLayout>
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="10px"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rotation="0"
+            android:rotationX="0"
+            android:rotationY="0"
+            android:rowCount="2">
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="#ff0000" />
+
+            <Button />
+
+            <Button />
+
+        </GridLayout>
+    </LinearLayout>
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,5 +61,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="305dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
