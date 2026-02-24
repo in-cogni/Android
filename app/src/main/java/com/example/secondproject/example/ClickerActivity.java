@@ -18,6 +18,25 @@ public class ClickerActivity extends AppCompatActivity {
     Button incrementCounterButton;
 
     @Override
+    protected void onPause(){
+        super.onPause();
+        System.out.println("On pause");
+    }
+
+    @Override
+    protected void onRestart(){
+        super.onRestart();
+        System.out.println("On start");
+    }
+    /*
+        onResume = запуск активностей, требующий фокуса: камера, гироскоп, поделиться
+        onDestroy - запускается перед оконательным уничтожением activity
+            Уничтожение различных ресурсов
+        onStart - метод, вызывающийся после onCreate
+
+     */
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clicker);
